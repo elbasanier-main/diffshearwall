@@ -1,0 +1,1801 @@
+{
+  "ProjectName": "Project_2x10_10",
+  "File_details": [
+    {
+      "Name of file": "between_10.xlsx",
+      "Shear_wall_ratio": 0.108974358974359,
+      "Story_detail": [
+        {
+          "Story": "Story10",
+          "Elevation": 40,
+          "Location": "Top",
+          "X-Dir": 38.762414225332726,
+          "Y-Dir": 28.942099991906005,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 36]",
+              "Elm Jt2": "[2, 0, 36]",
+              "Elm Jt3": "[2, 0, 40]",
+              "Elm Jt4": "[0, 0, 40]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 36]",
+              "Elm Jt2": "[0, 2, 36]",
+              "Elm Jt3": "[0, 2, 40]",
+              "Elm Jt4": "[0, 0, 40]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 36]",
+              "Elm Jt2": "[12, 2, 36]",
+              "Elm Jt3": "[12, 2, 40]",
+              "Elm Jt4": "[12, 0, 40]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 36]",
+              "Elm Jt2": "[2, 60, 36]",
+              "Elm Jt3": "[2, 60, 40]",
+              "Elm Jt4": "[0, 60, 40]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 36]",
+              "Elm Jt2": "[12, 0, 36]",
+              "Elm Jt3": "[12, 0, 40]",
+              "Elm Jt4": "[10, 0, 40]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 36]",
+              "Elm Jt2": "[0, 60, 36]",
+              "Elm Jt3": "[0, 60, 40]",
+              "Elm Jt4": "[0, 58, 40]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 36]",
+              "Elm Jt2": "[12, 60, 36]",
+              "Elm Jt3": "[12, 60, 40]",
+              "Elm Jt4": "[10, 60, 40]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 36]",
+              "Elm Jt2": "[12, 60, 36]",
+              "Elm Jt3": "[12, 60, 40]",
+              "Elm Jt4": "[12, 58, 40]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 36]",
+              "Elm Jt2": "[4, 36, 36]",
+              "Elm Jt3": "[4, 36, 40]",
+              "Elm Jt4": "[2, 36, 40]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 36]",
+              "Elm Jt2": "[12, 34, 36]",
+              "Elm Jt3": "[12, 34, 40]",
+              "Elm Jt4": "[12, 32, 40]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 36]",
+              "Elm Jt2": "[8, 48, 36]",
+              "Elm Jt3": "[8, 48, 40]",
+              "Elm Jt4": "[6, 48, 40]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 36]",
+              "Elm Jt2": "[0, 34, 36]",
+              "Elm Jt3": "[0, 34, 40]",
+              "Elm Jt4": "[0, 32, 40]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 36]",
+              "Elm Jt2": "[10, 12, 36]",
+              "Elm Jt3": "[10, 12, 40]",
+              "Elm Jt4": "[8, 12, 40]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 36]",
+              "Elm Jt2": "[0, 20, 36]",
+              "Elm Jt3": "[0, 20, 40]",
+              "Elm Jt4": "[0, 18, 40]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 36]",
+              "Elm Jt2": "[6, 26, 36]",
+              "Elm Jt3": "[6, 26, 40]",
+              "Elm Jt4": "[6, 24, 40]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 36]",
+              "Elm Jt2": "[0, 58, 36]",
+              "Elm Jt3": "[0, 58, 40]",
+              "Elm Jt4": "[0, 56, 40]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 36]",
+              "Elm Jt2": "[6, 36, 36]",
+              "Elm Jt3": "[6, 36, 40]",
+              "Elm Jt4": "[6, 34, 40]"
+            }
+          ]
+        },
+        {
+          "Story": "Story9",
+          "Elevation": 36,
+          "Location": "Top",
+          "X-Dir": 39.17913099295631,
+          "Y-Dir": 29.039738158740253,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 32]",
+              "Elm Jt2": "[2, 0, 32]",
+              "Elm Jt3": "[2, 0, 36]",
+              "Elm Jt4": "[0, 0, 36]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 32]",
+              "Elm Jt2": "[0, 2, 32]",
+              "Elm Jt3": "[0, 2, 36]",
+              "Elm Jt4": "[0, 0, 36]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 32]",
+              "Elm Jt2": "[12, 2, 32]",
+              "Elm Jt3": "[12, 2, 36]",
+              "Elm Jt4": "[12, 0, 36]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 32]",
+              "Elm Jt2": "[2, 60, 32]",
+              "Elm Jt3": "[2, 60, 36]",
+              "Elm Jt4": "[0, 60, 36]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 32]",
+              "Elm Jt2": "[12, 0, 32]",
+              "Elm Jt3": "[12, 0, 36]",
+              "Elm Jt4": "[10, 0, 36]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 32]",
+              "Elm Jt2": "[0, 60, 32]",
+              "Elm Jt3": "[0, 60, 36]",
+              "Elm Jt4": "[0, 58, 36]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 32]",
+              "Elm Jt2": "[12, 60, 32]",
+              "Elm Jt3": "[12, 60, 36]",
+              "Elm Jt4": "[10, 60, 36]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 32]",
+              "Elm Jt2": "[12, 60, 32]",
+              "Elm Jt3": "[12, 60, 36]",
+              "Elm Jt4": "[12, 58, 36]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 32]",
+              "Elm Jt2": "[4, 36, 32]",
+              "Elm Jt3": "[4, 36, 36]",
+              "Elm Jt4": "[2, 36, 36]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 32]",
+              "Elm Jt2": "[12, 34, 32]",
+              "Elm Jt3": "[12, 34, 36]",
+              "Elm Jt4": "[12, 32, 36]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 32]",
+              "Elm Jt2": "[8, 48, 32]",
+              "Elm Jt3": "[8, 48, 36]",
+              "Elm Jt4": "[6, 48, 36]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 32]",
+              "Elm Jt2": "[0, 34, 32]",
+              "Elm Jt3": "[0, 34, 36]",
+              "Elm Jt4": "[0, 32, 36]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 32]",
+              "Elm Jt2": "[10, 12, 32]",
+              "Elm Jt3": "[10, 12, 36]",
+              "Elm Jt4": "[8, 12, 36]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 32]",
+              "Elm Jt2": "[0, 20, 32]",
+              "Elm Jt3": "[0, 20, 36]",
+              "Elm Jt4": "[0, 18, 36]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 32]",
+              "Elm Jt2": "[6, 26, 32]",
+              "Elm Jt3": "[6, 26, 36]",
+              "Elm Jt4": "[6, 24, 36]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 32]",
+              "Elm Jt2": "[0, 58, 32]",
+              "Elm Jt3": "[0, 58, 36]",
+              "Elm Jt4": "[0, 56, 36]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 32]",
+              "Elm Jt2": "[6, 36, 32]",
+              "Elm Jt3": "[6, 36, 36]",
+              "Elm Jt4": "[6, 34, 36]"
+            }
+          ]
+        },
+        {
+          "Story": "Story8",
+          "Elevation": 32,
+          "Location": "Top",
+          "X-Dir": 39.632649077547384,
+          "Y-Dir": 29.107586679533902,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 28]",
+              "Elm Jt2": "[2, 0, 28]",
+              "Elm Jt3": "[2, 0, 32]",
+              "Elm Jt4": "[0, 0, 32]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 28]",
+              "Elm Jt2": "[0, 2, 28]",
+              "Elm Jt3": "[0, 2, 32]",
+              "Elm Jt4": "[0, 0, 32]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 28]",
+              "Elm Jt2": "[12, 2, 28]",
+              "Elm Jt3": "[12, 2, 32]",
+              "Elm Jt4": "[12, 0, 32]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 28]",
+              "Elm Jt2": "[2, 60, 28]",
+              "Elm Jt3": "[2, 60, 32]",
+              "Elm Jt4": "[0, 60, 32]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 28]",
+              "Elm Jt2": "[12, 0, 28]",
+              "Elm Jt3": "[12, 0, 32]",
+              "Elm Jt4": "[10, 0, 32]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 28]",
+              "Elm Jt2": "[0, 60, 28]",
+              "Elm Jt3": "[0, 60, 32]",
+              "Elm Jt4": "[0, 58, 32]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 28]",
+              "Elm Jt2": "[12, 60, 28]",
+              "Elm Jt3": "[12, 60, 32]",
+              "Elm Jt4": "[10, 60, 32]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 28]",
+              "Elm Jt2": "[12, 60, 28]",
+              "Elm Jt3": "[12, 60, 32]",
+              "Elm Jt4": "[12, 58, 32]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 28]",
+              "Elm Jt2": "[4, 36, 28]",
+              "Elm Jt3": "[4, 36, 32]",
+              "Elm Jt4": "[2, 36, 32]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 28]",
+              "Elm Jt2": "[12, 34, 28]",
+              "Elm Jt3": "[12, 34, 32]",
+              "Elm Jt4": "[12, 32, 32]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 28]",
+              "Elm Jt2": "[8, 48, 28]",
+              "Elm Jt3": "[8, 48, 32]",
+              "Elm Jt4": "[6, 48, 32]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 28]",
+              "Elm Jt2": "[0, 34, 28]",
+              "Elm Jt3": "[0, 34, 32]",
+              "Elm Jt4": "[0, 32, 32]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 28]",
+              "Elm Jt2": "[10, 12, 28]",
+              "Elm Jt3": "[10, 12, 32]",
+              "Elm Jt4": "[8, 12, 32]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 28]",
+              "Elm Jt2": "[0, 20, 28]",
+              "Elm Jt3": "[0, 20, 32]",
+              "Elm Jt4": "[0, 18, 32]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 28]",
+              "Elm Jt2": "[6, 26, 28]",
+              "Elm Jt3": "[6, 26, 32]",
+              "Elm Jt4": "[6, 24, 32]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 28]",
+              "Elm Jt2": "[0, 58, 28]",
+              "Elm Jt3": "[0, 58, 32]",
+              "Elm Jt4": "[0, 56, 32]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 28]",
+              "Elm Jt2": "[6, 36, 28]",
+              "Elm Jt3": "[6, 36, 32]",
+              "Elm Jt4": "[6, 34, 32]"
+            }
+          ]
+        },
+        {
+          "Story": "Story7",
+          "Elevation": 28,
+          "Location": "Top",
+          "X-Dir": 39.99519462055323,
+          "Y-Dir": 29.09896150003448,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 24]",
+              "Elm Jt2": "[2, 0, 24]",
+              "Elm Jt3": "[2, 0, 28]",
+              "Elm Jt4": "[0, 0, 28]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 24]",
+              "Elm Jt2": "[0, 2, 24]",
+              "Elm Jt3": "[0, 2, 28]",
+              "Elm Jt4": "[0, 0, 28]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 24]",
+              "Elm Jt2": "[12, 2, 24]",
+              "Elm Jt3": "[12, 2, 28]",
+              "Elm Jt4": "[12, 0, 28]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 24]",
+              "Elm Jt2": "[2, 60, 24]",
+              "Elm Jt3": "[2, 60, 28]",
+              "Elm Jt4": "[0, 60, 28]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 24]",
+              "Elm Jt2": "[12, 0, 24]",
+              "Elm Jt3": "[12, 0, 28]",
+              "Elm Jt4": "[10, 0, 28]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 24]",
+              "Elm Jt2": "[0, 60, 24]",
+              "Elm Jt3": "[0, 60, 28]",
+              "Elm Jt4": "[0, 58, 28]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 24]",
+              "Elm Jt2": "[12, 60, 24]",
+              "Elm Jt3": "[12, 60, 28]",
+              "Elm Jt4": "[10, 60, 28]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 24]",
+              "Elm Jt2": "[12, 60, 24]",
+              "Elm Jt3": "[12, 60, 28]",
+              "Elm Jt4": "[12, 58, 28]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 24]",
+              "Elm Jt2": "[4, 36, 24]",
+              "Elm Jt3": "[4, 36, 28]",
+              "Elm Jt4": "[2, 36, 28]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 24]",
+              "Elm Jt2": "[12, 34, 24]",
+              "Elm Jt3": "[12, 34, 28]",
+              "Elm Jt4": "[12, 32, 28]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 24]",
+              "Elm Jt2": "[8, 48, 24]",
+              "Elm Jt3": "[8, 48, 28]",
+              "Elm Jt4": "[6, 48, 28]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 24]",
+              "Elm Jt2": "[0, 34, 24]",
+              "Elm Jt3": "[0, 34, 28]",
+              "Elm Jt4": "[0, 32, 28]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 24]",
+              "Elm Jt2": "[10, 12, 24]",
+              "Elm Jt3": "[10, 12, 28]",
+              "Elm Jt4": "[8, 12, 28]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 24]",
+              "Elm Jt2": "[0, 20, 24]",
+              "Elm Jt3": "[0, 20, 28]",
+              "Elm Jt4": "[0, 18, 28]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 24]",
+              "Elm Jt2": "[6, 26, 24]",
+              "Elm Jt3": "[6, 26, 28]",
+              "Elm Jt4": "[6, 24, 28]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 24]",
+              "Elm Jt2": "[0, 58, 24]",
+              "Elm Jt3": "[0, 58, 28]",
+              "Elm Jt4": "[0, 56, 28]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 24]",
+              "Elm Jt2": "[6, 36, 24]",
+              "Elm Jt3": "[6, 36, 28]",
+              "Elm Jt4": "[6, 34, 28]"
+            }
+          ]
+        },
+        {
+          "Story": "Story6",
+          "Elevation": 24,
+          "Location": "Top",
+          "X-Dir": 40.13864591018334,
+          "Y-Dir": 28.939722676783568,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 20]",
+              "Elm Jt2": "[2, 0, 20]",
+              "Elm Jt3": "[2, 0, 24]",
+              "Elm Jt4": "[0, 0, 24]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 20]",
+              "Elm Jt2": "[0, 2, 20]",
+              "Elm Jt3": "[0, 2, 24]",
+              "Elm Jt4": "[0, 0, 24]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 20]",
+              "Elm Jt2": "[12, 2, 20]",
+              "Elm Jt3": "[12, 2, 24]",
+              "Elm Jt4": "[12, 0, 24]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 20]",
+              "Elm Jt2": "[2, 60, 20]",
+              "Elm Jt3": "[2, 60, 24]",
+              "Elm Jt4": "[0, 60, 24]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 20]",
+              "Elm Jt2": "[12, 0, 20]",
+              "Elm Jt3": "[12, 0, 24]",
+              "Elm Jt4": "[10, 0, 24]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 20]",
+              "Elm Jt2": "[0, 60, 20]",
+              "Elm Jt3": "[0, 60, 24]",
+              "Elm Jt4": "[0, 58, 24]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 20]",
+              "Elm Jt2": "[12, 60, 20]",
+              "Elm Jt3": "[12, 60, 24]",
+              "Elm Jt4": "[10, 60, 24]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 20]",
+              "Elm Jt2": "[12, 60, 20]",
+              "Elm Jt3": "[12, 60, 24]",
+              "Elm Jt4": "[12, 58, 24]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 20]",
+              "Elm Jt2": "[4, 36, 20]",
+              "Elm Jt3": "[4, 36, 24]",
+              "Elm Jt4": "[2, 36, 24]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 20]",
+              "Elm Jt2": "[12, 34, 20]",
+              "Elm Jt3": "[12, 34, 24]",
+              "Elm Jt4": "[12, 32, 24]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 20]",
+              "Elm Jt2": "[8, 48, 20]",
+              "Elm Jt3": "[8, 48, 24]",
+              "Elm Jt4": "[6, 48, 24]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 20]",
+              "Elm Jt2": "[0, 34, 20]",
+              "Elm Jt3": "[0, 34, 24]",
+              "Elm Jt4": "[0, 32, 24]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 20]",
+              "Elm Jt2": "[10, 12, 20]",
+              "Elm Jt3": "[10, 12, 24]",
+              "Elm Jt4": "[8, 12, 24]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 20]",
+              "Elm Jt2": "[0, 20, 20]",
+              "Elm Jt3": "[0, 20, 24]",
+              "Elm Jt4": "[0, 18, 24]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 20]",
+              "Elm Jt2": "[6, 26, 20]",
+              "Elm Jt3": "[6, 26, 24]",
+              "Elm Jt4": "[6, 24, 24]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 20]",
+              "Elm Jt2": "[0, 58, 20]",
+              "Elm Jt3": "[0, 58, 24]",
+              "Elm Jt4": "[0, 56, 24]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 20]",
+              "Elm Jt2": "[6, 36, 20]",
+              "Elm Jt3": "[6, 36, 24]",
+              "Elm Jt4": "[6, 34, 24]"
+            }
+          ]
+        },
+        {
+          "Story": "Story5",
+          "Elevation": 20,
+          "Location": "Top",
+          "X-Dir": 39.93193039959832,
+          "Y-Dir": 28.54638002736788,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 16]",
+              "Elm Jt2": "[2, 0, 16]",
+              "Elm Jt3": "[2, 0, 20]",
+              "Elm Jt4": "[0, 0, 20]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 16]",
+              "Elm Jt2": "[0, 2, 16]",
+              "Elm Jt3": "[0, 2, 20]",
+              "Elm Jt4": "[0, 0, 20]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 16]",
+              "Elm Jt2": "[12, 2, 16]",
+              "Elm Jt3": "[12, 2, 20]",
+              "Elm Jt4": "[12, 0, 20]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 16]",
+              "Elm Jt2": "[2, 60, 16]",
+              "Elm Jt3": "[2, 60, 20]",
+              "Elm Jt4": "[0, 60, 20]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 16]",
+              "Elm Jt2": "[12, 0, 16]",
+              "Elm Jt3": "[12, 0, 20]",
+              "Elm Jt4": "[10, 0, 20]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 16]",
+              "Elm Jt2": "[0, 60, 16]",
+              "Elm Jt3": "[0, 60, 20]",
+              "Elm Jt4": "[0, 58, 20]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 16]",
+              "Elm Jt2": "[12, 60, 16]",
+              "Elm Jt3": "[12, 60, 20]",
+              "Elm Jt4": "[10, 60, 20]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 16]",
+              "Elm Jt2": "[12, 60, 16]",
+              "Elm Jt3": "[12, 60, 20]",
+              "Elm Jt4": "[12, 58, 20]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 16]",
+              "Elm Jt2": "[4, 36, 16]",
+              "Elm Jt3": "[4, 36, 20]",
+              "Elm Jt4": "[2, 36, 20]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 16]",
+              "Elm Jt2": "[12, 34, 16]",
+              "Elm Jt3": "[12, 34, 20]",
+              "Elm Jt4": "[12, 32, 20]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 16]",
+              "Elm Jt2": "[8, 48, 16]",
+              "Elm Jt3": "[8, 48, 20]",
+              "Elm Jt4": "[6, 48, 20]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 16]",
+              "Elm Jt2": "[0, 34, 16]",
+              "Elm Jt3": "[0, 34, 20]",
+              "Elm Jt4": "[0, 32, 20]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 16]",
+              "Elm Jt2": "[10, 12, 16]",
+              "Elm Jt3": "[10, 12, 20]",
+              "Elm Jt4": "[8, 12, 20]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 16]",
+              "Elm Jt2": "[0, 20, 16]",
+              "Elm Jt3": "[0, 20, 20]",
+              "Elm Jt4": "[0, 18, 20]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 16]",
+              "Elm Jt2": "[6, 26, 16]",
+              "Elm Jt3": "[6, 26, 20]",
+              "Elm Jt4": "[6, 24, 20]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 16]",
+              "Elm Jt2": "[0, 58, 16]",
+              "Elm Jt3": "[0, 58, 20]",
+              "Elm Jt4": "[0, 56, 20]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 16]",
+              "Elm Jt2": "[6, 36, 16]",
+              "Elm Jt3": "[6, 36, 20]",
+              "Elm Jt4": "[6, 34, 20]"
+            }
+          ]
+        },
+        {
+          "Story": "Story4",
+          "Elevation": 16,
+          "Location": "Top",
+          "X-Dir": 39.20239983868517,
+          "Y-Dir": 27.79911197410984,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 12]",
+              "Elm Jt2": "[2, 0, 12]",
+              "Elm Jt3": "[2, 0, 16]",
+              "Elm Jt4": "[0, 0, 16]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 12]",
+              "Elm Jt2": "[0, 2, 12]",
+              "Elm Jt3": "[0, 2, 16]",
+              "Elm Jt4": "[0, 0, 16]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 12]",
+              "Elm Jt2": "[12, 2, 12]",
+              "Elm Jt3": "[12, 2, 16]",
+              "Elm Jt4": "[12, 0, 16]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 12]",
+              "Elm Jt2": "[2, 60, 12]",
+              "Elm Jt3": "[2, 60, 16]",
+              "Elm Jt4": "[0, 60, 16]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 12]",
+              "Elm Jt2": "[12, 0, 12]",
+              "Elm Jt3": "[12, 0, 16]",
+              "Elm Jt4": "[10, 0, 16]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 12]",
+              "Elm Jt2": "[0, 60, 12]",
+              "Elm Jt3": "[0, 60, 16]",
+              "Elm Jt4": "[0, 58, 16]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 12]",
+              "Elm Jt2": "[12, 60, 12]",
+              "Elm Jt3": "[12, 60, 16]",
+              "Elm Jt4": "[10, 60, 16]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 12]",
+              "Elm Jt2": "[12, 60, 12]",
+              "Elm Jt3": "[12, 60, 16]",
+              "Elm Jt4": "[12, 58, 16]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 12]",
+              "Elm Jt2": "[4, 36, 12]",
+              "Elm Jt3": "[4, 36, 16]",
+              "Elm Jt4": "[2, 36, 16]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 12]",
+              "Elm Jt2": "[12, 34, 12]",
+              "Elm Jt3": "[12, 34, 16]",
+              "Elm Jt4": "[12, 32, 16]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 12]",
+              "Elm Jt2": "[8, 48, 12]",
+              "Elm Jt3": "[8, 48, 16]",
+              "Elm Jt4": "[6, 48, 16]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 12]",
+              "Elm Jt2": "[0, 34, 12]",
+              "Elm Jt3": "[0, 34, 16]",
+              "Elm Jt4": "[0, 32, 16]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 12]",
+              "Elm Jt2": "[10, 12, 12]",
+              "Elm Jt3": "[10, 12, 16]",
+              "Elm Jt4": "[8, 12, 16]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 12]",
+              "Elm Jt2": "[0, 20, 12]",
+              "Elm Jt3": "[0, 20, 16]",
+              "Elm Jt4": "[0, 18, 16]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 12]",
+              "Elm Jt2": "[6, 26, 12]",
+              "Elm Jt3": "[6, 26, 16]",
+              "Elm Jt4": "[6, 24, 16]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 12]",
+              "Elm Jt2": "[0, 58, 12]",
+              "Elm Jt3": "[0, 58, 16]",
+              "Elm Jt4": "[0, 56, 16]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 12]",
+              "Elm Jt2": "[6, 36, 12]",
+              "Elm Jt3": "[6, 36, 16]",
+              "Elm Jt4": "[6, 34, 16]"
+            }
+          ]
+        },
+        {
+          "Story": "Story3",
+          "Elevation": 12,
+          "Location": "Top",
+          "X-Dir": 37.660116367081635,
+          "Y-Dir": 26.4897082419455,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 8]",
+              "Elm Jt2": "[2, 0, 8]",
+              "Elm Jt3": "[2, 0, 12]",
+              "Elm Jt4": "[0, 0, 12]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 8]",
+              "Elm Jt2": "[0, 2, 8]",
+              "Elm Jt3": "[0, 2, 12]",
+              "Elm Jt4": "[0, 0, 12]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 8]",
+              "Elm Jt2": "[12, 2, 8]",
+              "Elm Jt3": "[12, 2, 12]",
+              "Elm Jt4": "[12, 0, 12]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 8]",
+              "Elm Jt2": "[2, 60, 8]",
+              "Elm Jt3": "[2, 60, 12]",
+              "Elm Jt4": "[0, 60, 12]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 8]",
+              "Elm Jt2": "[12, 0, 8]",
+              "Elm Jt3": "[12, 0, 12]",
+              "Elm Jt4": "[10, 0, 12]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 8]",
+              "Elm Jt2": "[0, 60, 8]",
+              "Elm Jt3": "[0, 60, 12]",
+              "Elm Jt4": "[0, 58, 12]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 8]",
+              "Elm Jt2": "[12, 60, 8]",
+              "Elm Jt3": "[12, 60, 12]",
+              "Elm Jt4": "[10, 60, 12]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 8]",
+              "Elm Jt2": "[12, 60, 8]",
+              "Elm Jt3": "[12, 60, 12]",
+              "Elm Jt4": "[12, 58, 12]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 8]",
+              "Elm Jt2": "[4, 36, 8]",
+              "Elm Jt3": "[4, 36, 12]",
+              "Elm Jt4": "[2, 36, 12]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 8]",
+              "Elm Jt2": "[12, 34, 8]",
+              "Elm Jt3": "[12, 34, 12]",
+              "Elm Jt4": "[12, 32, 12]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 8]",
+              "Elm Jt2": "[8, 48, 8]",
+              "Elm Jt3": "[8, 48, 12]",
+              "Elm Jt4": "[6, 48, 12]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 8]",
+              "Elm Jt2": "[0, 34, 8]",
+              "Elm Jt3": "[0, 34, 12]",
+              "Elm Jt4": "[0, 32, 12]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 8]",
+              "Elm Jt2": "[10, 12, 8]",
+              "Elm Jt3": "[10, 12, 12]",
+              "Elm Jt4": "[8, 12, 12]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 8]",
+              "Elm Jt2": "[0, 20, 8]",
+              "Elm Jt3": "[0, 20, 12]",
+              "Elm Jt4": "[0, 18, 12]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 8]",
+              "Elm Jt2": "[6, 26, 8]",
+              "Elm Jt3": "[6, 26, 12]",
+              "Elm Jt4": "[6, 24, 12]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 8]",
+              "Elm Jt2": "[0, 58, 8]",
+              "Elm Jt3": "[0, 58, 12]",
+              "Elm Jt4": "[0, 56, 12]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 8]",
+              "Elm Jt2": "[6, 36, 8]",
+              "Elm Jt3": "[6, 36, 12]",
+              "Elm Jt4": "[6, 34, 12]"
+            }
+          ]
+        },
+        {
+          "Story": "Story2",
+          "Elevation": 8,
+          "Location": "Top",
+          "X-Dir": 34.71768818743818,
+          "Y-Dir": 24.144163243612514,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 4]",
+              "Elm Jt2": "[2, 0, 4]",
+              "Elm Jt3": "[2, 0, 8]",
+              "Elm Jt4": "[0, 0, 8]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 4]",
+              "Elm Jt2": "[0, 2, 4]",
+              "Elm Jt3": "[0, 2, 8]",
+              "Elm Jt4": "[0, 0, 8]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 4]",
+              "Elm Jt2": "[12, 2, 4]",
+              "Elm Jt3": "[12, 2, 8]",
+              "Elm Jt4": "[12, 0, 8]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 4]",
+              "Elm Jt2": "[2, 60, 4]",
+              "Elm Jt3": "[2, 60, 8]",
+              "Elm Jt4": "[0, 60, 8]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 4]",
+              "Elm Jt2": "[12, 0, 4]",
+              "Elm Jt3": "[12, 0, 8]",
+              "Elm Jt4": "[10, 0, 8]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 4]",
+              "Elm Jt2": "[0, 60, 4]",
+              "Elm Jt3": "[0, 60, 8]",
+              "Elm Jt4": "[0, 58, 8]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 4]",
+              "Elm Jt2": "[12, 60, 4]",
+              "Elm Jt3": "[12, 60, 8]",
+              "Elm Jt4": "[10, 60, 8]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 4]",
+              "Elm Jt2": "[12, 60, 4]",
+              "Elm Jt3": "[12, 60, 8]",
+              "Elm Jt4": "[12, 58, 8]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 4]",
+              "Elm Jt2": "[4, 36, 4]",
+              "Elm Jt3": "[4, 36, 8]",
+              "Elm Jt4": "[2, 36, 8]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 4]",
+              "Elm Jt2": "[12, 34, 4]",
+              "Elm Jt3": "[12, 34, 8]",
+              "Elm Jt4": "[12, 32, 8]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 4]",
+              "Elm Jt2": "[8, 48, 4]",
+              "Elm Jt3": "[8, 48, 8]",
+              "Elm Jt4": "[6, 48, 8]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 4]",
+              "Elm Jt2": "[0, 34, 4]",
+              "Elm Jt3": "[0, 34, 8]",
+              "Elm Jt4": "[0, 32, 8]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 4]",
+              "Elm Jt2": "[10, 12, 4]",
+              "Elm Jt3": "[10, 12, 8]",
+              "Elm Jt4": "[8, 12, 8]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 4]",
+              "Elm Jt2": "[0, 20, 4]",
+              "Elm Jt3": "[0, 20, 8]",
+              "Elm Jt4": "[0, 18, 8]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 4]",
+              "Elm Jt2": "[6, 26, 4]",
+              "Elm Jt3": "[6, 26, 8]",
+              "Elm Jt4": "[6, 24, 8]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 4]",
+              "Elm Jt2": "[0, 58, 4]",
+              "Elm Jt3": "[0, 58, 8]",
+              "Elm Jt4": "[0, 56, 8]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 4]",
+              "Elm Jt2": "[6, 36, 4]",
+              "Elm Jt3": "[6, 36, 8]",
+              "Elm Jt4": "[6, 34, 8]"
+            }
+          ]
+        },
+        {
+          "Story": "Story1",
+          "Elevation": 4,
+          "Location": "Top",
+          "X-Dir": 27.826404446910246,
+          "Y-Dir": 19.007020746133662,
+          "Wall_Details": [
+            {
+              "Element Name": 1,
+              "Object Type": "Wall",
+              "Object Label": "W1",
+              "Object Name": 1,
+              "Elm Jt1": "[0, 0, 0]",
+              "Elm Jt2": "[2, 0, 0]",
+              "Elm Jt3": "[2, 0, 4]",
+              "Elm Jt4": "[0, 0, 4]"
+            },
+            {
+              "Element Name": 7,
+              "Object Type": "Wall",
+              "Object Label": "W7",
+              "Object Name": 7,
+              "Elm Jt1": "[0, 0, 0]",
+              "Elm Jt2": "[0, 2, 0]",
+              "Elm Jt3": "[0, 2, 4]",
+              "Elm Jt4": "[0, 0, 4]"
+            },
+            {
+              "Element Name": 43,
+              "Object Type": "Wall",
+              "Object Label": "W43",
+              "Object Name": 43,
+              "Elm Jt1": "[12, 0, 0]",
+              "Elm Jt2": "[12, 2, 0]",
+              "Elm Jt3": "[12, 2, 4]",
+              "Elm Jt4": "[12, 0, 4]"
+            },
+            {
+              "Element Name": 37,
+              "Object Type": "Wall",
+              "Object Label": "W37",
+              "Object Name": 37,
+              "Elm Jt1": "[0, 60, 0]",
+              "Elm Jt2": "[2, 60, 0]",
+              "Elm Jt3": "[2, 60, 4]",
+              "Elm Jt4": "[0, 60, 4]"
+            },
+            {
+              "Element Name": 6,
+              "Object Type": "Wall",
+              "Object Label": "W6",
+              "Object Name": 6,
+              "Elm Jt1": "[10, 0, 0]",
+              "Elm Jt2": "[12, 0, 0]",
+              "Elm Jt3": "[12, 0, 4]",
+              "Elm Jt4": "[10, 0, 4]"
+            },
+            {
+              "Element Name": 36,
+              "Object Type": "Wall",
+              "Object Label": "W36",
+              "Object Name": 36,
+              "Elm Jt1": "[0, 58, 0]",
+              "Elm Jt2": "[0, 60, 0]",
+              "Elm Jt3": "[0, 60, 4]",
+              "Elm Jt4": "[0, 58, 4]"
+            },
+            {
+              "Element Name": 42,
+              "Object Type": "Wall",
+              "Object Label": "W42",
+              "Object Name": 42,
+              "Elm Jt1": "[10, 60, 0]",
+              "Elm Jt2": "[12, 60, 0]",
+              "Elm Jt3": "[12, 60, 4]",
+              "Elm Jt4": "[10, 60, 4]"
+            },
+            {
+              "Element Name": 72,
+              "Object Type": "Wall",
+              "Object Label": "W72",
+              "Object Name": 72,
+              "Elm Jt1": "[12, 58, 0]",
+              "Elm Jt2": "[12, 60, 0]",
+              "Elm Jt3": "[12, 60, 4]",
+              "Elm Jt4": "[12, 58, 4]"
+            },
+            {
+              "Element Name": 134,
+              "Object Type": "Wall",
+              "Object Label": "W134",
+              "Object Name": 134,
+              "Elm Jt1": "[2, 36, 0]",
+              "Elm Jt2": "[4, 36, 0]",
+              "Elm Jt3": "[4, 36, 4]",
+              "Elm Jt4": "[2, 36, 4]"
+            },
+            {
+              "Element Name": 59,
+              "Object Type": "Wall",
+              "Object Label": "W59",
+              "Object Name": 59,
+              "Elm Jt1": "[12, 32, 0]",
+              "Elm Jt2": "[12, 34, 0]",
+              "Elm Jt3": "[12, 34, 4]",
+              "Elm Jt4": "[12, 32, 4]"
+            },
+            {
+              "Element Name": 148,
+              "Object Type": "Wall",
+              "Object Label": "W148",
+              "Object Name": 148,
+              "Elm Jt1": "[6, 48, 0]",
+              "Elm Jt2": "[8, 48, 0]",
+              "Elm Jt3": "[8, 48, 4]",
+              "Elm Jt4": "[6, 48, 4]"
+            },
+            {
+              "Element Name": 23,
+              "Object Type": "Wall",
+              "Object Label": "W23",
+              "Object Name": 23,
+              "Elm Jt1": "[0, 32, 0]",
+              "Elm Jt2": "[0, 34, 0]",
+              "Elm Jt3": "[0, 34, 4]",
+              "Elm Jt4": "[0, 32, 4]"
+            },
+            {
+              "Element Name": 113,
+              "Object Type": "Wall",
+              "Object Label": "W113",
+              "Object Name": 113,
+              "Elm Jt1": "[8, 12, 0]",
+              "Elm Jt2": "[10, 12, 0]",
+              "Elm Jt3": "[10, 12, 4]",
+              "Elm Jt4": "[8, 12, 4]"
+            },
+            {
+              "Element Name": 16,
+              "Object Type": "Wall",
+              "Object Label": "W16",
+              "Object Name": 16,
+              "Elm Jt1": "[0, 18, 0]",
+              "Elm Jt2": "[0, 20, 0]",
+              "Elm Jt3": "[0, 20, 4]",
+              "Elm Jt4": "[0, 18, 4]"
+            },
+            {
+              "Element Name": 85,
+              "Object Type": "Wall",
+              "Object Label": "W85",
+              "Object Name": 85,
+              "Elm Jt1": "[6, 24, 0]",
+              "Elm Jt2": "[6, 26, 0]",
+              "Elm Jt3": "[6, 26, 4]",
+              "Elm Jt4": "[6, 24, 4]"
+            },
+            {
+              "Element Name": 35,
+              "Object Type": "Wall",
+              "Object Label": "W35",
+              "Object Name": 35,
+              "Elm Jt1": "[0, 56, 0]",
+              "Elm Jt2": "[0, 58, 0]",
+              "Elm Jt3": "[0, 58, 4]",
+              "Elm Jt4": "[0, 56, 4]"
+            },
+            {
+              "Element Name": 90,
+              "Object Type": "Wall",
+              "Object Label": "W90",
+              "Object Name": 90,
+              "Elm Jt1": "[6, 34, 0]",
+              "Elm Jt2": "[6, 36, 0]",
+              "Elm Jt3": "[6, 36, 4]",
+              "Elm Jt4": "[6, 34, 4]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
