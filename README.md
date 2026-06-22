@@ -3,6 +3,8 @@
   <img src="docs/overview.png" alt="Framework overview" width="820">
 </p>
 
+This package is a first pre-step of the research program at DLARC (Deep Learning Architecture Research Center) focused on AI-driven structural engineering automation.
+
 # RC Shear Wall Layout Generation & Drift Prediction
 
 An integrated framework for the **early-stage design of reinforced-concrete shear
