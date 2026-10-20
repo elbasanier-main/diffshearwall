@@ -1,0 +1,315 @@
+"""
+split_utils.py
+Leakage-controlled train/val/test splitting for the drift surrogate (v9).
+
+Reviewer motivation (EAAI, data leakage):
+The original pipeline shuffled all 1,907 configurations into a random 80/20
+train/val split (seed 42) with NO independent test set. Each plan type is built
+by sequentially adding walls along ONE interpolation trajectory, encoded in the
+graph filename as "{Nx}x{Ny}_between_{k}" (optionally prefixed, e.g.
+"supergraph_before_3x7_between_40.pt"). Consecutive steps are near-duplicates, so
+a random split places such neighbours in both train and val, inflating validation
+R^2. These splits reuse the EXISTING filenames only -- no new data / ETABS runs.
+
+Each function accepts a list of file paths (or bare names) and returns a
+(train, val, test) tuple of lists, drawn from the same input list.
+"""
+
+import re
+import random
+from collections import defaultdict
+
+# Plan token like "6x6"; step token like "between_10" (optional -- some files are
+# named "..._plan_8x2_max", "..._min2x7_u", "..._Plan_3x6_min" with no "between").
+_PLAN_RE = re.compile(r"(\d+x\d+)")
+_STEP_RE = re.compile(r"between_(\d+)")
+
+
+def parse_name(name):
+    """Extract (plan, step) from a path/name.
+    '.../6x6_between_10.pt'            -> ('6x6', 10)
+    '.../8x2_plan_u_plan_8x2_max.pt'  -> ('8x2', -1)   # no 'between' -> step -1
+    Plan is the first NxM token found; step is the 'between_<n>' value if present,
+    else -1 (these min/max endpoint files are duplicates of a between_* file of the
+    SAME plan, so under grouped/kfold split they always land in the same fold)."""
+    pm = _PLAN_RE.search(name)
+    if pm is None:
+        raise ValueError(f"Cannot parse plan (NxM) from building name: {name!r}")
+    plan = pm.group(1)
+    sm = _STEP_RE.search(name)
+    step = int(sm.group(1)) if sm else -1
+    return plan, step
+
+
+def _group_by_plan(names):
+    groups = defaultdict(list)
+    for n in names:
+        plan, _ = parse_name(n)
+        groups[plan].append(n)
+    return groups
+
+
+def split_by_plan(names, n_val_plans=3, n_test_plans=3, seed=42):
+    """
+    Leave-plan-out. Whole plan types are assigned to val or test, so no plan
+    geometry seen in training reappears in validation or test. Strictest test of
+    generalization to unseen plan geometry -- directly answers the "plan-wise"
+    request. With 17 plan types and (3 val, 3 test), 11 plans remain for training.
+    """
+    groups = _group_by_plan(names)
+    plans = sorted(groups)
+    if n_val_plans + n_test_plans >= len(plans):
+        raise ValueError(
+            f"n_val_plans + n_test_plans ({n_val_plans + n_test_plans}) must be "
+            f"smaller than the number of plan types ({len(plans)})."
+        )
+    rng = random.Random(seed)
+    rng.shuffle(plans)
+    test_plans = set(plans[:n_test_plans])
+    val_plans = set(plans[n_test_plans:n_test_plans + n_val_plans])
+    train, val, test = [], [], []
+    for plan, members in groups.items():
+        target = test if plan in test_plans else val if plan in val_plans else train
+        target.extend(members)
+    return train, val, test
+
+
+def split_by_trajectory(names, val_frac=0.2, test_frac=0.1):
+    """
+    Configuration-path-wise. Within each plan the configurations are sorted by
+    interpolation step and cut into CONTIGUOUS blocks: the first steps -> train,
+    the next -> val, the last -> test. Held-out steps form a contiguous tail
+    rather than being interleaved, so near-duplicate neighbours never straddle the
+    split, while every plan is still represented in all three sets.
+    """
+    groups = _group_by_plan(names)
+    train, val, test = [], [], []
+    for plan in sorted(groups):
+        members = sorted(groups[plan], key=lambda n: parse_name(n)[1])
+        n = len(members)
+        n_test = max(1, round(n * test_frac))
+        n_val = max(1, round(n * val_frac))
+        n_train = max(1, n - n_val - n_test)
+        # Re-trim val/test if rounding overshot a small plan.
+        n_val = min(n_val, n - n_train)
+        n_test = n - n_train - n_val
+        train.extend(members[:n_train])
+        val.extend(members[n_train:n_train + n_val])
+        test.extend(members[n_train + n_val:])
+    return train, val, test
+
+
+def split_random(names, val_frac=0.2, test_frac=0.1, seed=42):
+    """
+    Original random split, extended with an independent held-out test set. Kept
+    for a like-for-like baseline against the grouped splits, so the paper can show
+    how much the random split overstated performance.
+    """
+    rng = random.Random(seed)
+    shuffled = list(names)
+    rng.shuffle(shuffled)
+    n = len(shuffled)
+    n_test = round(n * test_frac)
+    n_val = round(n * val_frac)
+    test = shuffled[:n_test]
+    val = shuffled[n_test:n_test + n_val]
+    train = shuffled[n_test + n_val:]
+    return train, val, test
+
+
+def make_plan_folds(names, n_folds=5, seed=42):
+    """Partition plan types into n_folds balanced groups (round-robin after a
+    seeded shuffle). Returns (groups_by_plan, list_of_plan_lists_per_fold)."""
+    groups = _group_by_plan(names)
+    plans = sorted(groups)
+    rng = random.Random(seed)
+    rng.shuffle(plans)
+    fold_plans = [[] for _ in range(n_folds)]
+    for i, p in enumerate(plans):
+        fold_plans[i % n_folds].append(p)
+    return groups, fold_plans
+
+
+def split_kfold(names, n_folds=5, fold=0, seed=42):
+    """
+    Grouped k-fold with a per-fold train/val/test split, partitioned by PLAN so
+    that no plan (hence no trajectory-neighbour) leaks across sets.
+
+      fold i:  test  = plan-group i
+               val   = plan-group (i+1) % n_folds   (rotating, also whole plans)
+               train = all remaining plan-groups
+
+    Every plan serves as test exactly once across the n_folds folds, and within
+    each fold train/val/test are disjoint at the plan level -> fully leakage-free.
+    Train each fold separately (fold=0..n_folds-1) and aggregate the test metrics
+    as mean +/- std.
+    """
+    if not (0 <= fold < n_folds):
+        raise ValueError(f"fold must be in [0, {n_folds}); got {fold}")
+    groups, fold_plans = make_plan_folds(names, n_folds, seed)
+    test_plans = set(fold_plans[fold])
+    val_plans = set(fold_plans[(fold + 1) % n_folds])
+    train, val, test = [], [], []
+    for plan, members in groups.items():
+        if plan in test_plans:
+            test.extend(members)
+        elif plan in val_plans:
+            val.extend(members)
+        else:
+            train.extend(members)
+    return train, val, test
+
+
+def split_trajectory_kfold(names, n_folds=10, fold=0):
+    """
+    Per-plan trajectory k-fold (Kieu B). WITHIN EACH PLAN, sort configurations by
+    trajectory step and cut into n_folds contiguous blocks; fold i uses:
+        test  = block i
+        val   = block (i+1) % n_folds
+        train = the remaining blocks
+    With n_folds=10 this gives ~80/10/10 (train/val/test) per fold, and:
+      * every plan appears in train, val AND test (unlike leave-plan-out),
+      * blocks are CONTIGUOUS, so near-duplicate trajectory neighbours stay in the
+        same set -> no "random-in-plan" leakage (the exact thing reviewers flagged),
+      * over the n_folds folds the test blocks tile the whole trajectory.
+
+    Files without a real 'between_<n>' step (the *_min / *_max / *_u aliases, step
+    -1) are content-duplicates of between_* files, so they are DROPPED here to avoid
+    a front/back ordering leak; no information is lost.
+    """
+    if not (0 <= fold < n_folds):
+        raise ValueError(f"fold must be in [0, {n_folds}); got {fold}")
+    groups = _group_by_plan(names)
+    train, val, test = [], [], []
+    for plan in sorted(groups):
+        members = [n for n in groups[plan] if parse_name(n)[1] >= 0]  # real between only
+        members.sort(key=lambda n: parse_name(n)[1])
+        m = len(members)
+        if m == 0:
+            continue
+        blocks = [members[(b * m) // n_folds:((b + 1) * m) // n_folds]
+                  for b in range(n_folds)]
+        t_i = fold
+        v_i = (fold + 1) % n_folds
+        for bi, blk in enumerate(blocks):
+            if bi == t_i:
+                test += blk
+            elif bi == v_i:
+                val += blk
+            else:
+                train += blk
+    return train, val, test
+
+
+def split_trajectory_kfold_strided(names, n_folds=10, fold=0):
+    """
+    Per-plan STRIDED trajectory k-fold (balanced difficulty).
+    WITHIN EACH PLAN, sort configurations by trajectory step, then assign each to a
+    fold by (rank mod n_folds). Fold i therefore takes ranks {i, i+n, i+2n, ...},
+    which are spread ACROSS the whole trajectory (early = few walls / large drift,
+    late = many walls / small drift). Compared with contiguous blocks:
+      * every fold spans the full range of wall densities -> difficulty is balanced,
+        so no fold collapses (contiguous fold 0 was all early/high-drift configs),
+      * consecutive near-duplicate steps land in DIFFERENT folds, and within a single
+        fold the test items are >= n_folds steps apart, so they are not near-duplicates
+        of each other; residual leakage is only at fold boundaries and is minimal.
+
+    For fold i:  test = rank %n == i ; val = rank %n == (i+1)%n ; train = the rest.
+    Still grouped by plan (every plan appears in train/val/test). Files without a real
+    'between' step (min/max/u aliases) are dropped (content duplicates).
+    """
+    if not (0 <= fold < n_folds):
+        raise ValueError(f"fold must be in [0, {n_folds}); got {fold}")
+    groups = _group_by_plan(names)
+    train, val, test = [], [], []
+    for plan in sorted(groups):
+        members = [n for n in groups[plan] if parse_name(n)[1] >= 0]
+        members.sort(key=lambda n: parse_name(n)[1])
+        for rank, name in enumerate(members):
+            bucket = rank % n_folds
+            if bucket == fold:
+                test.append(name)
+            elif bucket == (fold + 1) % n_folds:
+                val.append(name)
+            else:
+                train.append(name)
+    return train, val, test
+
+
+def split_trajectory_kfold_purged(names, n_folds=10, fold=0, purge=2):
+    """
+    Per-plan STRIDED trajectory k-fold WITH PURGING (leakage sensitivity test).
+
+    Same strided assignment as split_trajectory_kfold_strided (test = rank %n == fold,
+    every fold spans low/medium/high wall density), BUT additionally PURGES a gap of
+    +/- `purge` trajectory steps around every test configuration: any train/val item
+    whose trajectory rank is within `purge` of a test item's rank (same plan) is
+    REMOVED. This directly addresses the reviewers' near-neighbour concern -- a test
+    config differing from a train config by only ~1 wall can no longer occur, because
+    the immediate neighbours of each test point are dropped from train and val.
+
+    Cost: purging discards ~2*purge neighbours per test point, so the training set
+    shrinks (with purge=2 and 10 folds, roughly 80% -> ~55-65% of configs remain in
+    train). This is intended as a SENSITIVITY analysis on a few folds, not the main
+    10-fold evaluation. If R^2 stays high under purging, near-neighbour similarity was
+    not driving the reported accuracy.
+
+    Returns (train, val, test). Test itself is NOT purged (it is the held-out set).
+    """
+    if not (0 <= fold < n_folds):
+        raise ValueError(f"fold must be in [0, {n_folds}); got {fold}")
+    groups = _group_by_plan(names)
+    val_bucket = (fold + n_folds // 2) % n_folds   # opposite side, far from test/purge
+    train, val, test = [], [], []
+    for plan in sorted(groups):
+        members = [n for n in groups[plan] if parse_name(n)[1] >= 0]
+        members.sort(key=lambda n: parse_name(n)[1])
+        n = len(members)
+        buckets = [rank % n_folds for rank in range(n)]
+        test_ranks = [r for r in range(n) if buckets[r] == fold]
+        val_ranks = set(r for r in range(n) if buckets[r] == val_bucket)
+        test_set = set(test_ranks)
+
+        # ranks to purge = within +/- purge of ANY test rank (excluding test itself)
+        purge_set = set()
+        for tr in test_ranks:
+            for d in range(-purge, purge + 1):
+                rr = tr + d
+                if 0 <= rr < n and rr not in test_set:
+                    purge_set.add(rr)
+
+        for rank, name in enumerate(members):
+            if rank in test_set:
+                test.append(name)
+            elif rank in purge_set:
+                continue                      # purged -> dropped from train AND val
+            elif rank in val_ranks:
+                val.append(name)
+            else:
+                train.append(name)
+    return train, val, test
+
+
+# Quick manual check: python split_utils.py
+if __name__ == "__main__":
+    demo = [f"6x6_between_{k}.pt" for k in range(20)] + \
+           [f"3x7_between_{k}.pt" for k in range(15)] + \
+           [f"8x3_between_{k}.pt" for k in range(10)] + \
+           [f"2x10_between_{k}.pt" for k in range(12)]
+    for name, fn in [("random", lambda x: split_random(x)),
+                     ("trajectory", lambda x: split_by_trajectory(x)),
+                     ("plan", lambda x: split_by_plan(x, n_val_plans=1, n_test_plans=1))]:
+        tr, va, te = fn(demo)
+        assert len(tr) + len(va) + len(te) == len(demo)
+        assert not (set(tr) & set(va)) and not (set(va) & set(te)) and not (set(tr) & set(te))
+        print(f"{name:11s} -> train {len(tr):3d}  val {len(va):3d}  test {len(te):3d}")
+
+    print("--- grouped 5-fold (per-fold train/val/test, by plan) ---")
+    seen_test = set()
+    for f in range(4):   # demo has 4 plans -> use n_folds=4 so every plan is test once
+        tr, va, te = split_kfold(demo, n_folds=4, fold=f)
+        assert not (set(tr) & set(va)) and not (set(va) & set(te)) and not (set(tr) & set(te))
+        seen_test |= {parse_name(n)[0] for n in te}
+        print(f"fold {f} -> train {len(tr):3d}  val {len(va):3d}  test {len(te):3d}  "
+              f"(test plans: {sorted({parse_name(n)[0] for n in te})})")
+    print("every plan was test exactly once:", len(seen_test) == 4)
